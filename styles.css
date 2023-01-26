@@ -275,7 +275,7 @@ button:hover {
   align-items: center;
   height: fit-content;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   background-color: rgba(0, 0, 0, 0.237);
   padding-top: 5rem;
 }
@@ -285,13 +285,15 @@ button:hover {
   color: var(--button-border);
 }
 .all-projects {
+  padding: 7rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 15rem;
   height: fit-content;
   width: 120rem;
-  height: 100vh;
+  height: fit-content;
   background-color: rgb(228, 249, 153);
 }
 .project {
@@ -443,4 +445,137 @@ img[src="./images/stack/Github.svg"]:hover {
 img[src="./images/stack/Git.svg"]:hover {
   filter: brightness(0) invert(1);
   cursor: pointer;
+}
+
+/* ************* Project - 02 ******************* */
+.all-projects .project-02 {
+  background-image: url(./images/projects/Project2.png);
+  position: relative;
+  left: 5.5%;
+}
+.project-03 {
+  background-image: url(./images/projects/Project3.png);
+}
+.project-04 {
+  background-image: url(./images/projects/Project4.png);
+  position: relative;
+  left: 5.5%;
+}
+
+/* **************** Footer ***************** */
+footer {
+  position: relative;
+  padding: 15rem 0;
+  /* background-color: antiquewhite; */
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer-wrapper {
+  /* background-color: rgb(188, 251, 224); */
+  width: 120rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 6.8rem;
+}
+
+.footer-text {
+  /* background-color: rgb(253, 168, 236); */
+  width: 40%;
+}
+.footer-heading {
+  width: 85%;
+  /* background-color: #fff; */
+  font-size: 6rem;
+  color: var(--button-border);
+  margin-bottom: 4rem;
+}
+.footer-heading span {
+  font-size: 8rem;
+  font-weight: 700;
+}
+.footer-para {
+  /* padding: 3rem; */
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+/****************** footer right ****************/
+.footer-skills-img {
+  width: 50%;
+  height: fit-content;
+  position: relative;
+}
+.blob-vector {
+  width: fit-content;
+  height: fit-content;
+  z-index: -1;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  /* transform: translate(-20%, -20%); */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* background-image: url(./images/userAsset/blob\ vector.png);
+  background-position: center;
+  background-repeat: no-repeat; */
+  animation-name: background-image;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+@keyframes background-image {
+  0% {
+    transform: translateX(10%);
+  }
+  50% {
+    transform: translateY(15%);
+  }
+  100% {
+    transform: translateX(10%);
+  }
+}
+
+.footer-languages-logo {
+  /* background-color: rgb(212, 186, 186); */
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  row-gap: 5.6rem;
+}
+.footer-language-logo {
+  width: 9.2rem;
+  transform: scale(1);
+}
+.footer-language-logo:hover {
+  transform: scale(1.3);
+  transition-property: transform;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  cursor: pointer;
+}
+.faded-skill-text {
+  text-transform: capitalize;
+  color: #000;
+  opacity: 15%;
+  position: absolute;
+  bottom: -30%;
+  right: -17%;
+  font-size: 25rem;
+  font-weight: 500;
 }
