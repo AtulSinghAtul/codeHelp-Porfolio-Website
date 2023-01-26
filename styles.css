@@ -57,11 +57,13 @@ html {
 }
 .nav-item {
   font-size: 2.1rem;
+  text-decoration: none;
+  color: #000;
 }
 .nav-item:hover {
   cursor: pointer;
   font-weight: 600;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 
 .header-container {
@@ -457,7 +459,7 @@ img[src="./images/stack/Git.svg"]:hover {
   left: 40%;
 }
 /* **************** Footer ***************** */
-footer {
+.skills-container {
   padding: 15rem 0;
   width: 100vw;
   height: fit-content;
@@ -466,7 +468,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.footer-wrapper {
+.skills-wrapper {
   width: 120rem;
   display: flex;
   flex-direction: row;
@@ -475,26 +477,26 @@ footer {
   gap: 6.8rem;
 }
 
-.footer-text {
+.skills-text {
   width: 40%;
 }
-.footer-heading {
+.skills-heading {
   width: 85%;
   font-size: 6rem;
   color: var(--button-border);
   margin-bottom: 4rem;
 }
-.footer-heading span {
+.skills-heading span {
   font-size: 8rem;
   font-weight: 700;
 }
-.footer-para {
+.skills-para {
   font-size: 1.6rem;
   text-align: justify;
 }
 
 /****************** footer right ****************/
-.footer-skills-img {
+.skills-skills-img {
   width: 50%;
   height: fit-content;
   position: relative;
@@ -526,7 +528,7 @@ footer {
   }
 }
 
-.footer-languages-logo {
+.skills-languages-logo {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -537,11 +539,11 @@ footer {
   gap: 3rem;
   row-gap: 5.6rem;
 }
-.footer-language-logo {
+.skills-language-logo {
   width: 9.2rem;
   transform: scale(1);
 }
-.footer-language-logo:hover {
+.skills-language-logo:hover {
   transform: scale(1.3);
   transition-property: transform;
   transition-duration: 0.4s;
@@ -551,6 +553,8 @@ footer {
 }
 .faded-text-container {
   overflow-x: hidden;
+  width: 100%;
+  height: fit-content;
 }
 .faded-skill-text {
   position: relative;
@@ -559,7 +563,121 @@ footer {
   text-transform: capitalize;
 
   bottom: 0%;
-  left: 78%;
+  left: 60%;
   font-size: 25rem;
   font-weight: 500;
+}
+
+/* ************ contact form section ************** */
+.contact-wrapper {
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.07);
+  padding: 8rem 0;
+}
+#contact {
+  width: 120rem;
+  height: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+}
+.contact-heading > h1 {
+  font-size: 7rem;
+  color: var(--button-border);
+}
+.contact-heading > p {
+  font-size: 3rem;
+  color: rgb(131, 130, 130);
+}
+
+.contact-input-form {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  /* margin-left: 17rem; */
+  position: relative;
+  left: 15%;
+}
+.contact-input-form > input {
+  width: 100%;
+  height: 3.5rem;
+  outline: none;
+  border: none;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.248);
+}
+.contact-input-form > textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.248);
+  margin-bottom: 3rem;
+}
+::placeholder {
+  text-align: left;
+  padding-left: 2rem;
+}
+.contact-input-form > textarea::placeholder {
+  padding: 2rem;
+}
+.contact-me-button {
+  border: none;
+}
+i {
+  margin-left: 5px;
+}
+
+/*************  footer section  *************/
+.footer-section {
+  position: relative;
+  width: 100%;
+  height: 19rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 11rem;
+  background-color: #040482;
+}
+.profile-name {
+  position: absolute;
+  bottom: 0%;
+  left: 0.4%;
+  font-size: 7rem;
+  font-weight: 700;
+  color: rgba(125, 125, 246, 0.421);
+
+  /* z-index: 1; */
+}
+.footer-text {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5rem;
+  color: #fff;
+  font-size: 2rem;
+}
+.footer-social-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.footer-social-icon > i {
+  font-size: 3rem;
+  color: #fff;
+}
+.footer-social-icon > i:hover {
+  color: rgb(103, 141, 255);
+  transition: all 8.8s ease 0;
+  cursor: pointer;
 }

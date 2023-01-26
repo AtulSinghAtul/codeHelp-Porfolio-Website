@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Help Portfolio Website</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/fb22eebb87.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div id="wrapper">
@@ -20,9 +24,9 @@
             <span>ohn Doe</span>
           </div>
           <div class="nav-items">
-            <span class="nav-item">Projects </span>
-            <span class="nav-item">Skills </span>
-            <span class="nav-item"> Contact Me</span>
+            <a href="#projects" class="nav-item">Projects </a>
+            <a href="#skills" class="nav-item">Skills </a>
+            <a href="#contact" class="nav-item"> Contact Me</a>
           </div>
         </nav>
 
@@ -66,9 +70,10 @@
           </section>
         </header>
       </div>
+
       <main class="projects-container">
         <span class="projects-heading">Projects</span>
-        <section class="all-projects">
+        <section id="projects" class="all-projects">
           <!--___________ Project 1st card_____________ -->
           <div class="projects-01 project">
             <!-- <img src="./images/projects/Project1.png" alt="" /> -->
@@ -227,11 +232,11 @@
         </section>
       </main>
 
-      <footer>
-        <div class="footer-wrapper">
-          <div class="footer-text left">
-            <p class="footer-heading"><span>M</span>e and MyTech Stack</p>
-            <p class="footer-para">
+      <div id="skills" class="skills-container">
+        <div class="skills-wrapper">
+          <div class="skills-text left">
+            <p class="skills-heading"><span>M</span>e and MyTech Stack</p>
+            <p class="skills-para">
               Hi Everyone My name is John Doe I am a Full Stack Web Developer I
               have been working for last 3 Years and Currently I am working with
               a Budding Startup in USA and a full Time Freelancer. Currently I
@@ -249,120 +254,178 @@
             </p>
           </div>
 
-          <div class="footer-skills-img">
+          <div class="skills-skills-img">
             <img
               class="blob-vector"
               src="./images/userAsset/blob vector.png"
               alt=""
             />
-            <div class="footer-languages-logo">
+            <div class="skills-languages-logo">
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/Bash.svg"
                 alt=""
               />
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/Bootstrap.svg"
                 alt=""
               />
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/ChartJs.svg"
                 alt=""
               />
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/CSS.png"
                 alt=""
               />
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/Docker.svg"
                 alt=""
               />
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/Express.png"
                 alt=""
               />
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/Vercel.svg"
                 alt=""
               />
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/Typescript.svg"
                 alt=""
               />
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/Graphql.svg"
                 alt=""
               />
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/HTML.png"
                 alt=""
               />
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/Javascript.svg"
                 alt=""
               />
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/K8s.svg"
                 alt=""
               />
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/MaterialUI.svg"
                 alt=""
               />
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/MongoDB.svg"
                 alt=""
               />
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/Next.svg"
                 alt=""
               />
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/NextJsCircle.png"
                 alt=""
               />
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/NodeJs.svg"
                 alt=""
               />
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/React.png"
                 alt=""
               />
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/Redux.svg"
                 alt=""
               />
               <img
-                class="footer-language-logo"
+                class="skills-language-logo"
                 src="./images/stack/Saas.svg"
                 alt=""
               />
             </div>
           </div>
         </div>
-      </footer>
+      </div>
       <div class="faded-text-container">
         <p class="faded-skill-text">skills</p>
       </div>
+
+      <!--________ contact form section ________-->
+      <div class="contact-wrapper">
+        <div id="contact">
+          <div class="contact-heading">
+            <h1>Contact Me</h1>
+            <p>Questions, Thoughts, Or Just Want To Say Hello?</p>
+          </div>
+
+          <div class="contact-input-form">
+            <label for="input-name"></label>
+            <input id="input-name" type="text" placeholder="Enter your name" />
+
+            <label for="input-email"></label>
+            <input
+              id="input-email"
+              type="text"
+              placeholder="Enter your email address"
+            />
+
+            <label for="input-subject"></label>
+            <input
+              id="input-subject"
+              type="text"
+              placeholder="Enter your subject"
+            />
+
+            <label for="message-area"></label>
+            <textarea
+              name=""
+              id="message-area"
+              cols="30"
+              rows="10"
+              placeholder="Enter your message"
+            ></textarea>
+
+            <button class="contact-me-button">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer-section">
+        <span class="profile-name">John Doe</span>
+        <ul class="footer-text">
+          <li>Projects</li>
+          <li>Skills</li>
+          <li>Contact Me</li>
+        </ul>
+        <span class="footer-social-icon">
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-square-github"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+        </span>
+      </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
