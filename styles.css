@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: "Be Vietnam Pro";
   scroll-behavior: smooth;
-  outline: 3px solid red;
+  /* outline: 3px solid red; */
 }
 :root {
   --button-color: rgb(252, 81, 81);
@@ -70,7 +70,6 @@ html {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* background-color: #fff; */
   margin-top: 6rem;
 }
 .left {
@@ -101,6 +100,11 @@ html {
 .left-text-para p:nth-child(2) span {
   font-size: 4.5rem;
 }
+.role {
+  color: #0606c5;
+  font-weight: 600;
+}
+
 .faded-name {
   position: absolute;
   bottom: -20rem;
@@ -110,6 +114,7 @@ html {
   font-weight: 900;
   opacity: 20%;
 }
+
 button {
   border: 2px solid var(--button-color);
   background-color: var(--button-color);
@@ -131,12 +136,13 @@ button::before {
   right: 0;
   z-index: -1;
   transform: scaleX(0%);
-}
-button:hover::before {
+  transition-property: transform;
   transform-origin: left;
-  transition-duration: 0.8s;
+  transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
+}
+button:hover::before {
   transform: scaleX(100%);
 }
 button:hover {
@@ -145,6 +151,9 @@ button:hover {
   transition-property: color;
   transition-timing-function: ease;
   transition-duration: 2s;
+}
+button.button {
+  border: none;
 }
 /* ********* right section ************** */
 .right {
@@ -296,7 +305,6 @@ button:hover {
   height: fit-content;
   width: 120rem;
   height: fit-content;
-  background-color: rgb(228, 249, 153);
 }
 .project {
   background-image: url(./images/projects/Project1.png);
@@ -321,6 +329,7 @@ button:hover {
   bottom: 0;
   right: 0;
   background-color: #0000008f;
+  z-index: 0;
 }
 .projects-01::after {
   content: "";
@@ -330,75 +339,51 @@ button:hover {
   bottom: 0;
   right: 0;
   transform: scaleX(0%);
-}
-.projects-01:hover::after {
-  opacity: 1;
   background-color: #0421928f;
-  transform-origin: right;
+  transform-origin: left;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
+  z-index: 1;
+}
+.projects-01:hover::after {
+  /* opacity: 1; */
+
   transform: scaleX(100%);
 }
-.project-number {
-  position: absolute;
+
+.project-number-right {
   font-size: 200px;
   color: #fff;
   font-weight: 600;
   z-index: 999;
-
-  width: 100%;
-  height: 100%;
-
-  opacity: 0;
-}
-.project-number:hover {
-  opacity: 1;
-}
-.project-number-right {
   position: absolute;
   right: -3.6%;
   top: -9%;
+  opacity: 0;
 }
-
-.skills-img-text {
-  z-index: 9;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: flex-start;
-  gap: 6rem;
-  color: #fff;
-  width: 100%;
-  height: 100%;
-
-  animation: zoom-in-zoom-out 4s ease 0s forwards infinite;
-}
-.skills-img-text:hover {
-  animation: zoom-in-zoom-out 4s ease 0s infinite forwards;
-}
-@keyframes zoom-in-zoom-out {
-  0% {
-    transform: scale(0.97);
-  }
-  50% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0.97);
-  }
+.project:hover .project-number-right {
+  opacity: 1;
 }
 
 .flex {
   position: absolute;
-  top: 50%;
+  top: 18%;
   left: 15%;
-  transform: translate(0%, -50%);
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   justify-items: flex-start;
   gap: 5rem;
+  z-index: 999;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 0.7s;
+  transition-timing-function: ease;
+}
+.project:hover .flex {
+  transform: scale(1.1);
 }
 
 .skills-img {
