@@ -662,8 +662,14 @@ i {
   justify-content: space-evenly;
   align-items: center;
   gap: 1.5rem;
-  color: #fff;
   font-size: 2rem;
+}
+.footer-text > a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-text > a:hover {
+  color: rgb(103, 141, 255);
 }
 .footer-social-icon {
   display: flex;
