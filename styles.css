@@ -16,10 +16,7 @@
 html {
   font-size: 62.5%;
 }
-/* html,
-body {
-  overflow-x: hidden;
-} */
+
 #wrapper {
   width: 100vw;
   height: 100vh;
@@ -466,11 +463,17 @@ img[src="./images/stack/Git.svg"]:hover {
   position: relative;
   left: 5.5%;
 }
+.project-number-right.number-left {
+  left: -4%;
+  width: fit-content;
+}
 
+.flex.flex-move-right {
+  left: 40%;
+}
 /* **************** Footer ***************** */
 footer {
   padding: 15rem 0;
-  /* background-color: antiquewhite; */
   width: 100vw;
   height: fit-content;
   display: flex;
@@ -479,7 +482,6 @@ footer {
   align-items: center;
 }
 .footer-wrapper {
-  /* background-color: rgb(188, 251, 224); */
   width: 120rem;
   display: flex;
   flex-direction: row;
@@ -489,12 +491,10 @@ footer {
 }
 
 .footer-text {
-  /* background-color: rgb(253, 168, 236); */
   width: 40%;
 }
 .footer-heading {
   width: 85%;
-  /* background-color: #fff; */
   font-size: 6rem;
   color: var(--button-border);
   margin-bottom: 4rem;
@@ -504,7 +504,6 @@ footer {
   font-weight: 700;
 }
 .footer-para {
-  /* padding: 3rem; */
   font-size: 1.6rem;
   text-align: justify;
 }
@@ -522,13 +521,6 @@ footer {
   position: absolute;
   left: 20%;
   top: 20%;
-  /* transform: translate(-20%, -20%); */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* background-image: url(./images/userAsset/blob\ vector.png);
-  background-position: center;
-  background-repeat: no-repeat; */
   animation-name: background-image;
   animation-duration: 4s;
   animation-delay: 0s;
@@ -550,7 +542,6 @@ footer {
 }
 
 .footer-languages-logo {
-  /* background-color: rgb(212, 186, 186); */
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -574,22 +565,16 @@ footer {
   cursor: pointer;
 }
 .faded-text-container {
-  /* position: relative; */
   overflow-x: hidden;
-  /* overscroll-behavior-y: contain;
-  overflow-y: auto; */
-  /* width: 100%; */
-  /* height: fit-content; */
 }
 .faded-skill-text {
   position: relative;
   color: #000;
   opacity: 15%;
   text-transform: capitalize;
-  /* position: absolute; */
+
   bottom: 0%;
   left: 78%;
   font-size: 25rem;
   font-weight: 500;
-  /* z-index: 999; */
 }
