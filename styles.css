@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Be Vietnam Pro";
   scroll-behavior: smooth;
+  outline: 3px solid red;
 }
 :root {
   --button-color: rgb(252, 81, 81);
@@ -15,6 +16,10 @@
 html {
   font-size: 62.5%;
 }
+/* html,
+body {
+  overflow-x: hidden;
+} */
 #wrapper {
   width: 100vw;
   height: 100vh;
@@ -464,10 +469,9 @@ img[src="./images/stack/Git.svg"]:hover {
 
 /* **************** Footer ***************** */
 footer {
-  position: relative;
   padding: 15rem 0;
   /* background-color: antiquewhite; */
-  width: 100%;
+  width: 100vw;
   height: fit-content;
   display: flex;
   flex-direction: row;
@@ -569,13 +573,23 @@ footer {
   transition-delay: 0s;
   cursor: pointer;
 }
+.faded-text-container {
+  /* position: relative; */
+  overflow-x: hidden;
+  /* overscroll-behavior-y: contain;
+  overflow-y: auto; */
+  /* width: 100%; */
+  /* height: fit-content; */
+}
 .faded-skill-text {
-  text-transform: capitalize;
+  position: relative;
   color: #000;
   opacity: 15%;
-  position: absolute;
-  bottom: -30%;
-  right: -17%;
+  text-transform: capitalize;
+  /* position: absolute; */
+  bottom: 0%;
+  left: 78%;
   font-size: 25rem;
   font-weight: 500;
+  /* z-index: 999; */
 }
